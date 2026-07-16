@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>aotai.jp — シンプルなパズル・カジュアルゲーム</title>
+<meta name="description" content="aotai.jp はスマートフォン向けのシンプルなパズル・カジュアルゲームを開発しています。">
+<style>
+  :root {
+    --bg: #faf9f6;
+    --fg: #2a2a2a;
+    --muted: #6b6b6b;
+    --accent: #b3402e;
+    --card: #ffffff;
+    --border: #e6e2da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16161a;
+      --fg: #e8e6e1;
+      --muted: #9a978f;
+      --accent: #e06a54;
+      --card: #1f1f24;
+      --border: #2e2e35;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.8;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  main { max-width: 560px; width: 100%; }
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+  }
+  h1 .dot { color: var(--accent); }
+  .tagline { color: var(--muted); margin-bottom: 32px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .card h2 {
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 32px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>aotai<span class="dot">.</span>jp</h1>
+  <p class="tagline">スマートフォン向けのシンプルなパズル・カジュアルゲームを開発しています。</p>
+
+  <div class="card">
+    <h2>GAMES</h2>
+    <p>カックロ、キラーナンプレ、スリザーリンク、ましゅ、脳トレ道場 など、
+    毎日すこしずつ遊べるパズルゲームを配信しています。</p>
+    <p><a href="https://play.google.com/store/apps/developer?id=aotai.jp">Google Play のアプリ一覧 →</a></p>
+  </div>
+
+  <div class="card">
+    <h2>CONTACT</h2>
+    <p><a href="mailto:info@aotai.jp">info@aotai.jp</a></p>
+  </div>
+
+  <footer>© 2026 aotai.jp</footer>
+</main>
+</body>
+</html>
